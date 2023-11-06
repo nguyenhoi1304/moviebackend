@@ -3,10 +3,10 @@ const genreListAll = require("../models/genreList");
 const trailerVideo = require("../models/videoList");
 
 exports.getAllMovie = (req, res, next) => {
-  let result = MovieAll.fetchAll();
-  result.splice(0, 100);
+  const movieAll = MovieAll.fetchAll();
+  const data = movieAll.splice(0, 100);
   res.status(200).json({
-    data: result,
+    data: data,
   });
 };
 
