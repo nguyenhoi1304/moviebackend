@@ -6,7 +6,7 @@ require("dotenv").config();
 const session = require("express-session");
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3030;
 
 app.use(cors());
 //Use static folder
